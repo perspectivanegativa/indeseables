@@ -1,0 +1,73 @@
+.container {
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 1px 0 rgba(0,0,0,0.31), 0 5px 8px -2px rgba(0,0,0,0.25);
+  padding: 5px;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+
+  .title {
+    text-align: center;
+    font-size: 30px;
+    height: 70px;
+    margin-top: 20px;
+  }
+  .descripcion {
+    height: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nominado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 4px;
+    img {
+      width: 100%;
+      height: 45vh;
+    }
+  }
+  .nominadosCont {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .round {
+    flex: 0 0 33.333333%;
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    .nombreNominado {
+      font-size: 15px;
+    }
+  }
+
+  .votacion {
+    overflow: hidden;
+    transition: all 1s ease-out;
+    max-height: 600px;
+  }
+  .isClosed {
+    max-height: 0;
+  }
+  .seleccionaAqui {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .selected {
+    background: red;
+  }
+}
